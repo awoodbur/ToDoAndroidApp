@@ -6,7 +6,7 @@ plugins {
 }
 
 android {
-    compileSdk 32
+    compileSdk 33
 
     defaultConfig {
         applicationId "com.github.awoodbur.to_docompose"
@@ -63,11 +63,16 @@ dependencies {
     debugImplementation "androidx.compose.ui:ui-test-manifest:$compose_version"
 
     // Compose Navigation
-    implementation("androidx.navigation:navigation-compose:2.5.0")
+    //implementation("androidx.navigation:navigation-compose:2.5.0")
+
+    //accompanist navigation animation
+    implementation "com.google.accompanist:accompanist-navigation-animation:0.27.0"
+
+
     //room components
-    implementation "androidx.room:room-runtime:2.4.2"
-    kapt "androidx.room:room-compiler:2.4.2"
-    implementation "androidx.room:room-ktx:2.4.2"
+    implementation "androidx.room:room-runtime:2.4.3"
+    kapt "androidx.room:room-compiler:2.4.3"
+    implementation "androidx.room:room-ktx:2.4.3"
 
     //DataStore Preferences
     implementation("androidx.datastore:datastore-preferences:1.0.0")
